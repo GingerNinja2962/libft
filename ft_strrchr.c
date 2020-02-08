@@ -1,6 +1,6 @@
-#include <libft.h>
+#include "libft.h"
 
-char	*ft_strnchr(const char *str, int c)
+char	*ft_strrchr(const char *str, int c)
 {
 	size_t	i;
 
