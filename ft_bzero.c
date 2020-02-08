@@ -2,6 +2,5 @@
 
 void	ft_bzero(void *str, size_t n)
 {
-	while (n-- > 0)
-		str[n];
+	ft_memset((unsigned char *)str, 0, n);
 }

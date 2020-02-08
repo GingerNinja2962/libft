@@ -5,12 +5,12 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 	size_t	i;
 
 	i = 0;
-	while (i < n && src[i] != c)
+	while (i < n)
 	{
-		dest[i] == src[i];
-		i++;
+		if (((unsigned char *)dest)[i] == ((unsigned char *)src)[i])
+			i++;
+		if (((unsigned char *)src)[i - 1] == c)
+			return (((unsigned char *)dest)[i]);
 	}
-	if (src[i] == c)
-		return (dest[++i]);
 	return (0);
 }
