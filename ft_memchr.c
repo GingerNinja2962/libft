@@ -8,6 +8,6 @@ void	*ft_memchr(const void *src, int c, size_t n)
 	while (i < n && ((unsigned char *)src)[i] != c)
 		i++;
 	if (((unsigned char *)src)[i] == c)
-		return (((unsigned char *)src)[i]);
+		return ((char *)(src + i));
 	return (0);
 }

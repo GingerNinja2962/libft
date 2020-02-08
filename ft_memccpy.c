@@ -10,7 +10,7 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 		if (((unsigned char *)dest)[i] == ((unsigned char *)src)[i])
 			i++;
 		if (((unsigned char *)src)[i - 1] == c)
-			return (((unsigned char *)dest)[i]);
+			return ((char *)(dest + i));
 	}
 	return (0);
 }

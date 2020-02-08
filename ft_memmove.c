@@ -4,7 +4,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	size_t	i;
 	char	*temp;
-	(char *)malloc((sizeof(char) * (ft_strlen((unsigned char *)src))) + 1);
+	temp = (char *)malloc((sizeof(char) * (ft_strlen((char *)src))) + 1);
 
 	i = 0;
 	while (i < n)
