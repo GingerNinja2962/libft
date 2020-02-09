@@ -9,5 +9,5 @@ void	*ft_memchr(const void *src, int c, size_t n)
 		i++;
 	if (((unsigned char *)src)[i] == c)
 		return ((char *)(src + i));
-	return (0);
+	return (NULL);
 }

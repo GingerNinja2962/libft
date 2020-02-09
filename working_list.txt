@@ -1,0 +1,6 @@
+ft_putchar		tested and working.
+ft_putstr		tested and working.
+ft_bzero		tested and working (i think).
+ft_memset		tested and working (confident).
+ft_memccpy		tested and working (confident).
+ft_
