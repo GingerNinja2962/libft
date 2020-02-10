@@ -2,18 +2,19 @@ NAME = libft.a
 
 SRCS = *.c
 
-OBJ = *.o
+OBJS = *.o
 
 all: $(NAME)
 
 $(NAME):
 	gcc -Wall -Werror -Wextra -c $(SRCS)
-	ar rc $(NAME) $(OBJ)
+	ar rc $(NAME) $(OBJS)
 	ranlib $(NAME)
+	/bin/rm -rf $(OBJS)
 
 
 clean:
-	/bin/rm -f $(OBJ)
+	/bin/rm -f $(OBJS)
 
 
 fclean: clean
