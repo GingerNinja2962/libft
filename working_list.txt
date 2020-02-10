@@ -1,9 +1,19 @@
+ft_bzero		tested and working.
+ft_memccpy		tested and working.
+ft_memchr		tested and working.
+ft_memcmp		tested and working.
+ft_memcpy		tested and working.
+ft_memmove		tested and working.
+ft_memset		tested and working.
 ft_putchar		tested and working.
 ft_putstr		tested and working.
-ft_bzero		tested and working.
-ft_memset		tested and working (confident).
-ft_memccpy		tested and working.
-ft_memchr		tested and working (confident).
-ft_memcmp		tested and working (confident).
-ft_memcpy		tested and working.
-ft_
+ft_strcat		.
+ft_strchr		..
+ft_strcpy		...
+ft_strdup		....
+ft_strlen		.....
+ft_strncat		......
+ft_strncpy		.......
+ft_strnstr		........
+ft_strrchr		.........
+ft_strstr		..........
