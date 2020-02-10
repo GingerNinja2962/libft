@@ -2,25 +2,21 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
+	size_t	i;
 	char	*temp;
-	temp = (char *)malloc((sizeof(char) * (ft_strlen((char *)src))) + 1);
+	temp = (char *)malloc(sizeof(char) * n);
 
-	s1 = dest;
-	s2 = src;
-	if (s2 < s1)
+	i = 0;
+	while (i < n)
 	{
-		while (n > 0)
-		{
-			temp[i] = ((unsigned char *)src)[i];
-			i++;
-		}
-		i = 0;
-		while (i < n)
-		{
-			((unsigned char *)dest)[i] = temp[i];
-			i++;
-		}
-		((unsigned char *)dest)[i] = 0;
+		temp[i] = ((char *)src)[i];
+		i++;
+	}
+	i = 0;
+	while (i < n)
+	{
+		((char *)dest)[i] = temp[i];
+		i++;
 	}
 	return (dest);
 }
