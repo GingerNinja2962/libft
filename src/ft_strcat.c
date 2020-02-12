@@ -1,12 +1,12 @@
-#include "libft.h"
+#include "../headers/libft.h"
 
 void	*ft_strcat(char *dest, const char *src)
 {
 	size_t	i;
 	size_t	j;
 
-	i = (ft_strlen(dest) - 1);
 	j = 0;
+	i = ft_strlen(dest);
 	while (src[j])
 	{
 		dest[i + j] = src[j];
