@@ -21,33 +21,43 @@ O_FILE := $(addsuffix .o,$(LIST))
 
 all: $(NAME)
 
-$(NAME): $(CC) $(O_DIR)
+$(NAME): $(O_DIR) $(CC)
 	echo "  -------[Linking]-------"
+	echo ""
 	ar rcs $@ $(O_DIR)*.o
 	ranlib $@
 	echo "  --[$@ finished]--"
+	echo ""
 
 $(CC):
 	echo " -------[compiling]-------"
+	echo ""
 	$(CC) $(CFLAGS) -I./$(H_DIR) -c $(S_FILE)
 	echo "       --[compiled]--"
-
-$(O_DIR):
+	echo ""
 	echo "-------[Neatening up]-------"
-	-mkdir -p $@
+	echo ""
 	-mv $(O_FILE) $(O_DIR)
 	echo "       --[Neatened]--"
+	echo ""
+
+$(O_DIR):
+	-mkdir -p $@
 
 clean:
 	echo "  -------[Cleaning]-------"
+	echo ""
 	-rm -rf	$(O_DIR)
 	-rm -rf $(O_FILE)
 	echo "       --[Cleaned]--"
+	echo ""
 
 fclean: clean
 	echo " -------[Scrubbing]-------"
+	echo ""
 	-rm -rf $(NAME)
 	echo "       --[Scrubbed]--"
+	echo ""
 
 re: fclean all
 
