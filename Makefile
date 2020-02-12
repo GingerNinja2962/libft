@@ -21,7 +21,7 @@ all: $(NAME)
 
 $(NAME): $(CC) $(O_DIR)
 	echo "  -------[Linking]-------"
-	ar rc $@ $(O_DIR)*.o
+	ar rc $@ $(addprefix $(O_DIR),$(wildcard *.o))
 	ranlib $@
 	echo "  --[$@ finished]--"
 
