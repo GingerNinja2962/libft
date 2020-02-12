@@ -10,8 +10,10 @@ O_DIR := obj/
 
 S_DIR := src/
 
-LIST := ft_bzero ft_memccpy ft_memchr ft_memcmp ft_memcpy ft_memmove ft_memset ft_putchar ft_putstr ft_strcat ft_strchr ft_strcpy ft_strdup\
-	ft_strlen ft_strncat ft_strncpy ft_strnstr ft_strrchr ft_strstr
+LIST := ft_bzero ft_memccpy ft_memchr ft_memcmp ft_memcpy ft_memmove\
+       ft_memset ft_putchar ft_putstr ft_strcat ft_strchr ft_strcpy\
+       ft_strdup ft_strlen ft_strncat ft_strncpy ft_strnstr ft_strrchr\
+       ft_strstr ft_strlcat
 
 S_FILE := $(addprefix $(S_DIR),$(addsuffix .c,$(LIST)))
 
@@ -21,13 +23,13 @@ all: $(NAME)
 
 $(NAME): $(CC) $(O_DIR)
 	echo "  -------[Linking]-------"
-	ar rc $@ $(addprefix $(O_DIR),$(wildcard *.o))
+	ar rcs $@ $(O_DIR)*.o
 	ranlib $@
 	echo "  --[$@ finished]--"
 
 $(CC):
 	echo " -------[compiling]-------"
-	$@ $(CFLAGS) -I./$(H_DIR) -c $(S_FILE)
+	$(CC) $(CFLAGS) -I./$(H_DIR) -c $(S_FILE)
 	echo "       --[compiled]--"
 
 $(O_DIR):
@@ -44,7 +46,7 @@ clean:
 
 fclean: clean
 	echo " -------[Scrubbing]-------"
-	rm -rf $(NAME)
+	-rm -rf $(NAME)
 	echo "       --[Scrubbed]--"
 
 re: fclean all
