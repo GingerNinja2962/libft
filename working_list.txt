@@ -1,7 +1,10 @@
 ft_atoi			tested and working.
 ft_bzero		tested and working.
+ft_isalnum		tested and working.
+ft_isascii		tested and working.
 ft_isaplha		tested and working.
 ft_isdigit		tested and working.
+ft_isprint		tested no segfault at high numbers.
 ft_memccpy		tested and working.
 ft_memchr		tested and working.
 ft_memcmp		tested and working.

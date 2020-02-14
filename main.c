@@ -8,6 +8,7 @@ int	main(int argc, char **argv)
 	(void)argc;
 	char	*s1;
 	//char	*s2;
+	int	num;
 	int	pointer1;
 	int	pointer2;
 
@@ -25,13 +26,16 @@ int	main(int argc, char **argv)
 
 	//write(1, "\n\ns2:\n	", 7);
 	//ft_putstr(s2);
+	num = ft_atoi(s1);
 
-	write(1, "\n\nft_isalnum pointer:\n	", 24);
-	pointer1 = ft_isalnum(((int)s1[0]));
+	printf("\nnum = %d\n", num);
+
+	//write(1, "\n\nft_isascii pointer:\n	", 24);
+	pointer1 = ft_tolower(num);
 	printf("\npointer1 = %d\n", pointer1);
 
-	write (1, "\n\ns1:\n	", 7);
-	ft_putstr(s1);
+	//write (1, "\n\ns1:\n	", 7);
+	//ft_putstr(num);
 
 	//write(1, "\n\ns2:\n	", 7);
 	//ft_putstr(s2);
@@ -50,8 +54,10 @@ int	main(int argc, char **argv)
 	//write(1, "\n\ns2:\n	", 7);
 	//ft_putstr(s2);
 
-	write(1, "\n\nisalnum pointer:\n	", 21);
-	pointer2 = isalnum(((int)s1[0]));
+	printf("\nnum = %d\n", num);
+
+	//write(1, "\n\nisascii pointer:\n	", 21);
+	pointer2 = tolower(num);
 	printf("\npointer2 = %d\n", pointer2);
 	//if (pointer2 < 0)
 	//	write(1, "less", 4);
@@ -60,8 +66,8 @@ int	main(int argc, char **argv)
 	//if (pointer2 == 0)
 	//	write(1, "equal", 5);
 
-	write (1, "\n\ns1:\n	", 7);
-	ft_putstr(s1);
+	//write (1, "\n\ns1:\n	", 7);
+	//ft_putstr(num);
 
 	//write(1, "\n\ns2:\n	", 7);
 	//ft_putstr(s2);
