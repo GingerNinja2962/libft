@@ -1,4 +1,7 @@
+ft_atoi			tested and working.
 ft_bzero		tested and working.
+ft_isaplha		tested and working.
+ft_isdigit		tested and working.
 ft_memccpy		tested and working.
 ft_memchr		tested and working.
 ft_memcmp		tested and working.
@@ -9,6 +12,7 @@ ft_putchar		tested and working.
 ft_putstr		tested and working.
 ft_strcat		tested and working.
 ft_strchr		tested and working.
+ft_strcmp		tested and working.
 ft_strcpy		tested and working.
 ft_strdup		tested and working.
 ft_strlcat		tested and working.

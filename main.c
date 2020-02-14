@@ -1,6 +1,7 @@
 #include "./headers/libft.h"
 #include <bsd/string.h>
 #include <stdio.h>
+#include <ctype.h>
 
 int	main(int argc, char **argv)
 {
@@ -25,8 +26,8 @@ int	main(int argc, char **argv)
 	//write(1, "\n\ns2:\n	", 7);
 	//ft_putstr(s2);
 
-	write(1, "\n\nft_atoi pointer (n = 13):\n	", 30);
-	pointer1 = ft_atoi(s1);
+	write(1, "\n\nft_isalnum pointer:\n	", 24);
+	pointer1 = ft_isalnum(((int)s1[0]));
 	printf("\npointer1 = %d\n", pointer1);
 
 	write (1, "\n\ns1:\n	", 7);
@@ -49,8 +50,8 @@ int	main(int argc, char **argv)
 	//write(1, "\n\ns2:\n	", 7);
 	//ft_putstr(s2);
 
-	write(1, "\n\natoi pointer (n = 13):\n	", 27);
-	pointer2 = atoi(s1);
+	write(1, "\n\nisalnum pointer:\n	", 21);
+	pointer2 = isalnum(((int)s1[0]));
 	printf("\npointer2 = %d\n", pointer2);
 	//if (pointer2 < 0)
 	//	write(1, "less", 4);

@@ -1,4 +1,4 @@
-#include "../headers/libft.h"
+#include <../headers/libft.h>
 
 void	*ft_strcat(char *dest, const char *src)
 {
