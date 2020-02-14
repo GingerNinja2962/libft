@@ -26,3 +26,5 @@ ft_strncpy		tested and working.
 ft_strnstr		tested and working.
 ft_strrchr		tested and working.
 ft_strstr		tested and working.
+ft_tolower		tested and working.
+ft_toupper		tested and working.
