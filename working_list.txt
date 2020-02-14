@@ -11,9 +11,11 @@ ft_strcat		tested and working.
 ft_strchr		tested and working.
 ft_strcpy		tested and working.
 ft_strdup		tested and working.
+ft_strlcat		tested and working.
 ft_strlen		tested and working.
 ft_strncat		tested and working.
-ft_strncpy		.......
-ft_strnstr		........
-ft_strrchr		.........
-ft_strstr		..........
+ft_strncmp		tested and working.
+ft_strncpy		tested and working.
+ft_strnstr		tested and working.
+ft_strrchr		tested and working.
+ft_strstr		tested and working.

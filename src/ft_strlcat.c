@@ -7,11 +7,13 @@ size_t	ft_strlcat(char *dest, const char *src, size_t n)
 
 	i = 0;
 	j = ft_strlen(dest);
-	while (i < (n - 1) && src[i])
+	while ((i + j + 1) < n && src[i])
 	{
 		dest[j + i] = src[i];
 		i++;
 	}
 	dest[j + i] = 0;
-	return (ft_strlen(dest));
+	if (ft_strlen(dest) > n) 
+		return (n + ft_strlen(src));
+	return (j + ft_strlen(src));
 }
