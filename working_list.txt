@@ -5,11 +5,12 @@ ft_isascii		tested and working.
 ft_isaplha		tested and working.
 ft_isdigit		tested and working.
 ft_isprint		tested no segfault at high numbers.
+ft_memalloc		tested and working.
 ft_memccpy		tested and working.
 ft_memchr		tested and working.
 ft_memcmp		tested and working.
 ft_memcpy		tested and working.
-ft_memmove		tested and working.
+ft_memmove		
 ft_memset		tested and working.
 ft_putchar		tested and working.
 ft_putstr		tested and working.
