@@ -12,11 +12,11 @@ S_DIR := ./src/
 
 LIST := ft_atoi ft_bzero ft_isascii ft_isalpha ft_isalnum\
 	ft_isdigit ft_isprint ft_toupper ft_tolower ft_memalloc\
-	ft_memccpy ft_memchr ft_memcmp ft_memcpy ft_memmove\
-	ft_memset ft_putchar ft_putstr ft_strcat ft_strchr\
-	ft_strcmp ft_strcpy ft_strdup ft_strlcat ft_strlen\
-	ft_strncat ft_strncmp ft_strncpy ft_strnstr ft_strrchr\
-	ft_strstr
+	ft_memccpy ft_memchr ft_memcmp ft_memcpy ft_memdel\
+	ft_memmove ft_memset ft_putchar ft_putstr ft_strcat\
+	ft_strchr ft_strcmp ft_strcpy ft_strdup ft_strlcat\
+	ft_strlen ft_strncat ft_strncmp ft_strncpy ft_strnstr\
+	ft_strrchr ft_strstr
 
 OBJ := $(patsubst %,$(O_DIR)%,$(addsuffix .o,$(LIST)))
 
