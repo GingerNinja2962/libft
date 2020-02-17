@@ -11,19 +11,23 @@ int	main(int argc, char **argv)
 	char	**s;
 
 	s = ft_memalloc(sizeof(char *) * 2);
-	s[0] = ft_memalloc(sizeof(char) * strlen(argv[1]) + 1);
-	s[1] = ft_memalloc(sizeof(char) * strlen(argv[2]) + 1);
+	s[0] = ft_strnew(ft_strlen(argv[1]) + 1);
+	s[1] = ft_strnew(ft_strlen(argv[2]) + 1);
 
-	strcpy(s[0], argv[1]);
-	strcpy(s[1], argv[2]);
+	ft_strcpy(s[0], argv[1]);
+	ft_strcpy(s[1], argv[2]);
 
 	write(1, "s1: ", 4);
 	ft_putstr(s[0]);
 	write(1, "\ns2: ", 5);
 	ft_putstr(s[1]);
 
-	ft_memdel((void **)s);
-	ft_memdel((void **)s+1);
+	ft_striter(s[0], (void *)s[1]);
+
+	ft_putstr(s[0]);
+
+	ft_strdel(s);
+	ft_strdel(s+1);
 
 	if (s[0] == NULL)
 		write(1, "\nNULL", 5);
@@ -33,12 +37,12 @@ int	main(int argc, char **argv)
 		ft_putstr(s[0]);
 	}
 	if (s[1] == NULL)
-		write(1, "\nNULL\n", 6);
+		write(1, "\nNULL", 5);
 	else
 	{
 		write(1, "\ns2: ", 5);
 		ft_putstr(s[1]);
-		write(1, "\n", 1);
 	}
+	write(1, "\n", 1);
 	return (0);
 }
