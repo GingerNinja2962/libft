@@ -4,7 +4,7 @@ CC := gcc
 
 CFLAGS := -Wall -Werror -Wextra
 
-VPATH:= ./src/ ./obj/ ./headers/
+VPATH := ./src/ ./obj/ ./headers/
 
 H_DIR := ./headers
 O_DIR := ./obj/

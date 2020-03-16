@@ -2,16 +2,14 @@
 
 void	*ft_strcat(char *dest, const char *src)
 {
-	size_t	i;
 	size_t	j;
 
 	j = 0;
-	i = ft_strlen(dest);
 	while (src[j])
 	{
-		dest[i + j] = src[j];
+		dest[ft_strlen(dest) + j] = src[j];
 		j++;
 	}
-	dest[i + j] = 0;
+	dest[ft_strlen(dest) + j] = 0;
 	return (dest);
 }

@@ -9,8 +9,8 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 	{
 		((char *)dest)[i] = ((char *)src)[i];
 		i++;
-		if (((unsigned char *)dest)[i - 1] == c)
-			return (&((unsigned char *)dest)[i]);
+		if (((char *)dest)[i - 1] == c)
+			return (&((char *)dest)[i]);
 	}
 	return (NULL);
 }

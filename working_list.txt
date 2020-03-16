@@ -4,34 +4,34 @@ ft_isalnum		tested and working.
 ft_isaplha		tested and working.
 ft_isascii		tested and working.
 ft_isdigit		tested and working.
-ft_isprint		tested no segfault at high numbers.
+ft_isprint		tested and working.
 ft_memalloc		tested and working.
 ft_memccpy		tested and working.
 ft_memchr		tested and working.
 ft_memcmp		tested and working.
 ft_memcpy		tested and working.
-ft_memdel		tested and working.
-ft_memmove		tested and working.
-ft_memset		tested and working.
+ft_memdel		tested and working. (i think...)
+ft_memmove		
+ft_memset		
 ft_putchar		tested and working.
 ft_putstr		tested and working.
-ft_strcat		tested and working.
-ft_strchr		tested and working.
-ft_strclr		tested and working.
-ft_strcmp		tested and working.
+ft_strcat		
+ft_strchr		
+ft_strclr		
+ft_strcmp		
 ft_strcpy		tested and working.
-ft_strdel		tested and working.
-ft_strdup		tested and working.
+ft_strdel		
+ft_strdup		
 ft_striter		
-ft_strlcat		tested and working.
+ft_strlcat		
 ft_strlen		tested and working.
-ft_strncat		tested and working.
-ft_strncmp		tested and working.
-ft_strncpy		tested and working.
-ft_strnstr		tested and working.
-ft_strnew		tested and working.
-ft_strnstr		tested and working.
-ft_strrchr		tested and working.
-ft_strstr		tested and working.
-ft_tolower		tested and working.
-ft_toupper		tested and working.
+ft_strncat		
+ft_strncmp		
+ft_strncpy		
+ft_strnstr		
+ft_strnew		
+ft_strnstr		
+ft_strrchr		
+ft_strstr		
+ft_tolower		
+ft_toupper		

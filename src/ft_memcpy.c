@@ -2,6 +2,6 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	ft_memccpy(dest, src, ((char *)src)[1], n);
-	return (&((unsigned char *)dest)[0]);
+	ft_memccpy(dest, src, 0, n);
+	return (dest);
 }
